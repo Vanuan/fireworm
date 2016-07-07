@@ -1,3 +1,15 @@
 language: node_js
 node_js:
   - "0.10"
+install:
+  - npm install -g npm-publish
+deploy:
+  provider: npm
+  email: vanuan@gmail.com
+  api_key:
+    secure: Ri7JCtXUfoMZECVEHlb/4tJRcqn33mG9pUUKhuxGHau43hfF44KJcXKo0v0ofenw8Q8yoqQyQC6xwYDw9JOnWsndM3SN49y+ak8p0GX8wveK+53QibI8IKq9wkYY+y4wTdur4sEmMtApB1ibVt2DbR3m/xBiYvkXblWYKeROVweClFhO5+UkrKGmiWoSvrXpxsmSk2+WJxOaf0mWtNcpCfgKTJIqQX4Lzt7KvLAGnuG57BoOvg0wO+5vU+hB2O2ZntVEF384PKZdiJUKxIkN2AVD55/Gj0DaQA565RyqUYtN921Z7VBYrI0zD1b6jMyGSKWYvAXRyA9Icuyz258b/I1l+e1teIOpJKur77+CXtgJInqDkeU/ZXeZCXECQJAAbKS8srocNevfZm/qmrEaZhp1HYKp71NQmUqXty3Bw4lyglakMHw/lUSKdUMaFmquO3aJhPdOrltpy7UX6YAftisRD8+BjITtzVYU8hboS3UkkvbUYI9LlWhFEy8PiV+iTXmxIBfsPUI5pcmU3xz4gX2tahIlTvuFJm/NmaJZGngLnOFLFUv1Xqd4aAd5t68KIkw7GNP7Gm7+3N06aIAOCtvktxLelRSvqhqFeKfnwc7P90TLoHlu0CMHNiZEGXuXCIfOEOM3QW3WbB7Cx28gyhah2sLvxlJXlnXHHMlkQwg=
+  on:
+    tags: true
+    node: '0.10'
+    repo: Vanuan/fireworm
+    branch: master
