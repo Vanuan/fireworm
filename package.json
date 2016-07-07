@@ -1,6 +1,6 @@
 {
   "name": "vanuan-fireworm",
-  "version": "0.7.2",
+  "version": "0.7.3",
   "description": "A crawling file watcher.",
   "main": "fireworm.js",
   "scripts": {
